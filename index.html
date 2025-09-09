@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CineRyn — Explore Movies & TV Series</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="production.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="brand" href="#">
+        <div class="logo">CR</div>
+        <div class="word">Cine<span class="subtle">Ryn</span></div>
+      </a>
+
+      <nav class="nav-actions">
+        <button class="btn" id="theme-toggle">Switch Theme</button>
+        <button class="btn">Browse</button>
+        <button class="btn">Top Picks</button>
+        <button class="btn">Genres</button>
+        <button class="btn primary">Sign In</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>
+            Selamat datang di <span style="color: var(--accent)">CineRyn</span>
+          </h1>
+          <p>
+            Temukan informasi lengkap film & TV series — sinopsis, rating,
+            trailer, dan rekomendasi kurasi.
+          </p>
+
+          <div class="search" role="search">
+            <input
+              aria-label="Cari film atau series"
+              placeholder="Cari film, aktor, atau series..."
+            />
+            <button class="search button">Search</button>
+          </div>
+
+          <div
+            style="margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap"
+          >
+            <button class="btn">Latest</button>
+            <button class="btn">Trending</button>
+            <button class="btn">Top Rated</button>
+          </div>
+        </div>
+
+        <aside class="featured">
+          <h4>Featured</h4>
+          <img
+            class="thumb"
+            src="https://via.placeholder.com/380x160.png?text=Featured+Poster"
+            alt="featured poster"
+          />
+          <p style="margin-top: 10px; color: var(--muted)">
+            Spotlight: Rekomendasi hari ini — pilih dari list kurasi editor
+            CineRyn.
+          </p>
+        </aside>
+      </section>
+      <section class="grid" aria-label="Daftar film"></section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> CineRyn · Explore Movies & TV Series
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
