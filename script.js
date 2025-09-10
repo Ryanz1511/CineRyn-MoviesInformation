@@ -23,15 +23,14 @@ document.addEventListener("DOMContentLoaded", () => {
     "the godfather",
     "the dark knight",
     "Jujutsu Kaisen",
-    "La La Land",
-    "fight club",
+    "Attack on Titan",
+    "Dexter: New Blood",
     "500 days of summer",
     "Kimetzu no Yaiba",
-    "Son of anarchy",
-    "Inceptiob",
+    "Avengers",
+    "Naruto",
     "Transformers",
-    "the matrix",
-    "mr robot"
+    "Dragon Ball"
   ];
 
   const INTERVAL_MS = 6000; // ganti jadi 2000 lamun handak 2 detik (tapi jangan terlalu sering)
@@ -282,3 +281,4 @@ function showFollowPopup() {
     popup.remove();
   };
 }
+
