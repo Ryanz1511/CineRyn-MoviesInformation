@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ----- Film Featured bergantian -----
+  // ----- gasan list Film Featured-----
   const bestMovies = [
     "Breaking Bad",
     "Better Call Saul",
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "Dragon Ball"
   ];
 
-  const INTERVAL_MS = 6000; // ganti jadi 2000 lamun handak 2 detik (tapi jangan terlalu sering)
+  const INTERVAL_MS = 4000;
   const API_KEY = "72ba2452"; // pastikan masih valid / ganti lawan API key pian
 
   const featured = document.querySelector(".featured");
@@ -281,4 +281,5 @@ function showFollowPopup() {
     popup.remove();
   };
 }
+
 
